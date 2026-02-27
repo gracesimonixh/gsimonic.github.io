@@ -7,11 +7,14 @@ body {
 }
 
 .hero-home {
-  height: 80vh;
+  height: 85vh;
   background: 
-    radial-gradient(circle at 20% 80%, #0f3d2b 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, #1a4f3a 0%, transparent 50%),
-    linear-gradient(135deg, #0a2a20 0%, #1a4f3a 30%, #2d5a47 70%, #0f3d2b 100%);
+    radial-gradient(ellipse at 20% 30%, #0a2a20 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, #1a4f3a 0%, transparent 50%),
+    radial-gradient(circle at 50% 20%, rgba(46,125,50,0.4) 0%, transparent 60%),
+    linear-gradient(145deg, #081c14 0%, #1a4f3a 25%, #2d5a47 50%, #1a4f3a 75%, #0a2a20 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 12s ease infinite;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,26 +27,32 @@ body {
 .hero-home::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background: 
-    radial-gradient(circle at 30% 70%, rgba(46,125,50,0.3) 0%, transparent 40%),
-    radial-gradient(circle at 70% 30%, rgba(76,175,80,0.2) 0%, transparent 40%);
-  animation: shimmer 6s ease-in-out infinite;
+    radial-gradient(circle at 40% 60%, rgba(76,175,80,0.3) 0%, transparent 40%),
+    radial-gradient(circle at 60% 40%, rgba(46,125,50,0.25) 0%, transparent 40%);
+  animation: pulseGlow 8s ease-in-out infinite alternate;
   z-index: 1;
 }
 
-@keyframes shimmer {
-  0%, 100% { opacity: 0.6; }
-  50% { opacity: 1; }
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  25% { background-position: 100% 0%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+}
+
+@keyframes pulseGlow {
+  0% { opacity: 0.4; transform: scale(1); }
+  100% { opacity: 0.8; transform: scale(1.05); }
 }
 
 
 .hero-content {
   max-width: 900px;
   padding: 0 2rem;
+  position: relative;  
+  z-index: 2;       
 }
 
 .hero-title {
@@ -67,7 +76,7 @@ body {
   padding: 1rem 0;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 200;  /* ADD THIS - higher than hero z-index 1 */
   box-shadow: 0 4px 20px rgba(26,79,58,0.3);
 }
 
