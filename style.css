@@ -96,20 +96,22 @@ body {
 .hero-social {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.75rem;
   margin-top: 2rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .hero-social a {
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;
+  padding: 0.5rem;
 }
 
 .hero-social a:hover {
-  color: #f093fb; 
+  color: #f093fb; /* pink shimmer to match gradient */
   transform: scale(1.2);
+  opacity: 1;
 }
 
 
