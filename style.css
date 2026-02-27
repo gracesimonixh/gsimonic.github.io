@@ -11,8 +11,7 @@ body {
 /* NEW: Hero header with background image (homepage only) */
 .hero-header {
   min-height: 60vh;
-  background: linear-gradient(135deg, rgba(15,23,42,0.7), rgba(59,130,246,0.4)), 
-              url('hero-bg.jpg') center/cover no-repeat;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
   display: flex;
   align-items: center;
   text-align: center;
@@ -23,7 +22,12 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .site-title {
   margin: 0 0 0.5rem;
