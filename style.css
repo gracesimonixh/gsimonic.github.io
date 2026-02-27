@@ -6,7 +6,6 @@ body {
   line-height: 1.6;
 }
 
-/* HOMEPAGE: Dark green gradient hero */
 .hero-home {
   height: 70vh;
   background: linear-gradient(135deg, #1a4f3a 0%, #2d5a47 50%, #0f3d2b 100%);
