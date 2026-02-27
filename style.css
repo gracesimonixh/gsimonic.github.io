@@ -33,6 +33,15 @@ body {
   flex-wrap: wrap;
 }
 
+.hero-header {
+  min-height: 60vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
 .site-nav a {
   text-decoration: none;
   color: #4b5563;
