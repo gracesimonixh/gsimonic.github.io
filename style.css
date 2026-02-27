@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f5f7fb;
+  color: #111827;
+}
+
+/* Header */
+.site-header {
+  padding: 2rem 0 1rem;
+}
+
+.site-header .inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.03em;
+}
+
+.tagline {
+  margin: 0.25rem 0 1rem;
+  color: #6b7280;
+}
+
+/* Nav as “tabs” */
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #4b5563;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+  font-size: 0.95rem;
+}
+
+.site-nav a:hover {
+  color: #111827;
+  border-bottom-color: #111827;
+}
+
+/* Main card */
+.wrapper {
+  max-width: 900px;
+  margin: 1.5rem auto 3rem;
+  padding: 2rem 1.8rem 3rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.07);
+}
+
+/* Sections */
+section + section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.35rem;
+}
+
+p, li {
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
