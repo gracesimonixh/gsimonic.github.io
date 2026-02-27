@@ -187,3 +187,55 @@ a:hover { color: #1d4ed8; }
   .hero-full { height: 90vh; }
   .wrapper { margin: 1rem; padding: 1.5rem; }
 }
+
+/* Gradient bar header for subpages */
+.gradient-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  color: white;
+  padding: 1.25rem 0 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.gradient-header .inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.gradient-header .site-title {
+  font-size: 1.9rem;
+  margin: 0 0 0.25rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.gradient-header .tagline {
+  margin: 0 0 1.25rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.gradient-header .site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.gradient-header .site-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1.1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.gradient-header .site-nav a:hover,
+.gradient-header .site-nav a.active {
+  background: rgba(255,255,255,0.25);
+  transform: translateY(-2px);
+}
