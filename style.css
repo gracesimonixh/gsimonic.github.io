@@ -7,14 +7,39 @@ body {
 }
 
 .hero-home {
-  height: 70vh;
-  background: linear-gradient(135deg, #1a4f3a 0%, #2d5a47 50%, #0f3d2b 100%);
+  height: 80vh;
+  background: 
+    radial-gradient(circle at 20% 80%, #0f3d2b 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, #1a4f3a 0%, transparent 50%),
+    linear-gradient(135deg, #0a2a20 0%, #1a4f3a 30%, #2d5a47 70%, #0f3d2b 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
+  position: relative;
+  overflow: hidden;
 }
+
+.hero-home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 30% 70%, rgba(46,125,50,0.3) 0%, transparent 40%),
+    radial-gradient(circle at 70% 30%, rgba(76,175,80,0.2) 0%, transparent 40%);
+  animation: shimmer 6s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
 
 .hero-content {
   max-width: 900px;
