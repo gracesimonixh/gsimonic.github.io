@@ -53,13 +53,18 @@ body {
   gap: 0.4rem;
 
   /* Fade-in animation */
-  animation: fadeUp 1s ease forwards;
+  animation: fadeUp 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0.2s;
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(30px);
 }
 
 @keyframes fadeUp {
-  to {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
