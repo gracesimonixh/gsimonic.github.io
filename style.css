@@ -205,6 +205,28 @@ body {
   line-height: 1.65;
 }
 
+.site-nav { 
+  display: flex; 
+  gap: 1.5rem; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+} 
+
+.site-nav a { 
+  text-decoration: none; 
+  color: #4b5563; 
+  padding: 0.5rem 1rem; 
+  border-bottom: 2px solid transparent; 
+  font-size: 0.95rem; border-radius: 6px; 
+  transition: all 0.2s; } 
+
+.site-nav a:hover, 
+.site-nav a.active { 
+  color: #111827; 
+  background: rgba(255,255,255,0.1); 
+  border-bottom-color: #111827; 
+}
+
 /* ================= WRAPPER SECTIONS ================= */
 .wrapper {
   max-width: 900px;
