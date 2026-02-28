@@ -42,12 +42,11 @@ body {
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 8vw, 5rem);
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  margin: 0;
-  text-shadow: 0 4px 20px rgba(0,0,0,0.5);
-  line-height: 1.1;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .hero-subtitle {
